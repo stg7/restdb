@@ -11,6 +11,7 @@ It is a small lookup rest server for [leveldb](https://github.com/google/leveldb
 
 Requirements
 ------------
+* scons
 * g++
 * boost (boost_program_options)
 * all dependencies that [leveldb](https://github.com/google/leveldb) and [mongoose-cpp](https://github.com/Gregwar/mongoose-cpp) have
