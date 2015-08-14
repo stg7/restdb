@@ -19,6 +19,7 @@ First Start
 -----------
 First you must run:
 > ./prepare.sh
+
 for downloading all needed thirdparty libs (leveldb and mongoose-cpp)
 
 Then the server can be compiled with
