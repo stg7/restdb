@@ -1,0 +1,10 @@
+leveldb/
+mongoose-cpp
+*.o
+get
+import
+restdb
+.sconf_temp/
+.sconsign.dblite
+config.log
+

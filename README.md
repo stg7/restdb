@@ -39,6 +39,7 @@ Import Data
 -----------
 In general the leveldb database is empty, therefore an import is needed, you can use the "import" tool for this step
 > echo -e "mykey\tmyvalue" | ./import
+
 will import "mykey-> myvalue" to the default database "DB"
 
 ```
