@@ -7,13 +7,13 @@ authors:
 
 About
 -----
-It is a small lookup rest server for level db.
+It is a small lookup rest server for [leveldb](https://github.com/google/leveldb).
 
 Requirements
 ------------
 * g++
 * boost (boost_program_options)
-* all dependencies that leveldb and mongoose-cpp have
+* all dependencies that [leveldb](https://github.com/google/leveldb) and [mongoose-cpp](https://github.com/Gregwar/mongoose-cpp) have
 
 First Start
 -----------
