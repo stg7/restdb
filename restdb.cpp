@@ -19,6 +19,9 @@ class WebServer : public WebController {
 
     public:
         WebServer(std::string dbname): _dbname(dbname) {}
+        ~WebServer() {
+            delete db;
+        }
 
         void index(Request &request, StreamResponse &response) {
             response << "{\"error\":\"not a valid request\"}" << std::endl;
@@ -32,7 +35,7 @@ class WebServer : public WebController {
             if (!s.ok()) {
                 key = "invalid";
             }
-            response << "{\"key\": \"" << key << "\", \"value\":" << value << " }" << std::endl;
+            response << "{\"key\": \"" << key << "\", \"value\": \"" << value << "\" }" << std::endl;
         }
 
         void setup() {

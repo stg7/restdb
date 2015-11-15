@@ -7,7 +7,7 @@ authors:
 
 About
 -----
-It is a small lookup rest server for [leveldb](https://github.com/google/leveldb).
+restdb is a small lookup rest server for [leveldb](https://github.com/google/leveldb).
 
 Requirements
 ------------
