@@ -44,4 +44,6 @@ int main(int argc, const char * argv[]) {
         std::cout << value << std::endl;
     };
 
+    delete db;
+    db = nullptr;
 }

@@ -23,8 +23,6 @@ std::vector<std::string> split(const std::string &s, char delim) {
     return elems;
 }
 
-
-
 int main(int argc, const char * argv[]) {
     namespace po = boost::program_options;
 
@@ -67,4 +65,6 @@ int main(int argc, const char * argv[]) {
         }
     };
 
+    delete db;
+    db = nullptr;
 }

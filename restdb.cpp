@@ -21,6 +21,7 @@ class WebServer : public WebController {
         WebServer(std::string dbname): _dbname(dbname) {}
         ~WebServer() {
             delete db;
+            db = nullptr;
         }
 
         void index(Request &request, StreamResponse &response) {
@@ -78,7 +79,7 @@ int main(int argc, const char * argv[]) {
     server.registerController(&controller);
 
     server.start();
-
+    std::cout << "restdb server started: port: " << port << " dbname: " << dbname << std::endl;
     while (1) {
         usleep(1000000);
     }

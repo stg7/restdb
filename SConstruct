@@ -5,11 +5,9 @@ import multiprocessing
 
 SetOption('num_jobs', multiprocessing.cpu_count()) # build with all aviable cpu cores/threads
 
-
-
 env = Environment(CPPPATH = ['/', "leveldb/include/", "mongoose-cpp/"],
                   LIBS = [""],
-                  LIBPATH = ['.', 'leveldb/', "mongoose-cpp/"],
+                  LIBPATH = ['.', 'leveldb/out-shared/', "mongoose-cpp/"],
                   )
 
 env.Decider('MD5')
@@ -21,7 +19,7 @@ for l in libs:
         print "Unable to find lib: " + l + ". Exiting."
         sys.exit(-1)
 
-env.Append(LINKFLAGS=['-Wl,--rpath,leveldb/', '-pthread'])
+env.Append(LINKFLAGS=['-Wl,--rpath,leveldb/out-shared/', '-pthread'])
 
 env.Append(CXXFLAGS=['-std=c++11', '-pthread'])
 
@@ -41,7 +39,6 @@ else:
 sources = ["get.cpp"] + glob.glob("src/*.cpp")
 
 env.Program('get', sources)
-
 
 sources = ["import.cpp"] + glob.glob("src/*.cpp")
 
