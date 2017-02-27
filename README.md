@@ -14,11 +14,11 @@ Requirements
 * scons
 * g++
 * boost (boost_program_options)
-* all dependencies that [leveldb](https://github.com/google/leveldb) and [mongoose-cpp](https://github.com/Gregwar/mongoose-cpp) have
+* all dependencies that [leveldb](https://github.com/google/leveldb) and [mongoose-cpp](https://github.com/Gregwar/mongoose-cpp) has
 
 First Start
 -----------
-First you must run:
+First you must run
 > ./prepare.sh
 
 for downloading all needed thirdparty libs (leveldb and mongoose-cpp)
@@ -26,7 +26,7 @@ for downloading all needed thirdparty libs (leveldb and mongoose-cpp)
 Then the server can be compiled with
 > scons
 
-After compilation runs without problems you can run the webserver with
+After compilation runs without problems, you can run the webserver with
 > ./restdb
 
 ```
